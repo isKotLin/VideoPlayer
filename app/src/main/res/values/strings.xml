@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">WrPlayer</string>
+    <string name="scan_start">正在扫描视频</string>
+    <string name="scan_second">秒</string>
+    <string name="scan_end">扫描结束,没有视频</string>
+    <string name="usb_insert">正在刷新</string>
+    <string name="usb_noVideo">视频为空</string>
+    <string name="app_exit">再按一次退出程序</string>
+    <string name="usb_tvc">00:00:00</string>
+    <string name="usb_tvd">00:00:00</string>
+</resources>

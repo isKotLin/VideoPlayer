@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    tools:context="com.wr.qt.nmediademo.MainActivity">
+
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/gray_selector"/>
+    <TextView
+        android:id="@+id/rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:text="1"
+        android:textColor="@color/colorWhite"
+        android:textSize="18px"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tvname"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/rank"
+        android:singleLine="true"
+        android:duplicateParentState="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:layout_centerInParent="true"
+        android:text="name"
+        android:textSize="18px"
+        android:layout_marginLeft="10dp"
+        android:textColor="#fff"/>
+
+    <TextView
+        android:id="@+id/tv_item_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="03:29:40"
+        android:textStyle="bold"
+        android:textSize="14px"
+        android:layout_alignParentRight="true"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp" />
+    <ImageView
+        android:id="@+id/play_view"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:visibility="visible"
+        android:layout_alignParentRight="true"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp" />
+    <TextView
+        android:id="@+id/tcsize"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true" />
+</RelativeLayout>

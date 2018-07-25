@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bot_rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="#000">
+            <LinearLayout
+                android:id="@+id/height_seek"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/colorBlack"
+                android:orientation="horizontal">
+                <SeekBar
+                    android:id="@+id/bot_seekbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="6dp"
+                    android:maxHeight="3dip"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp"
+                    android:thumbOffset="0dip"
+                    android:minHeight="4dip"
+                    android:progressDrawable="@drawable/progress_style"
+                    android:thumb="@mipmap/thumb" />
+            </LinearLayout>
+        <ImageButton
+            android:id="@+id/bot_pre"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@mipmap/pre"
+            android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="25dp">
+                <ImageButton
+                    android:id="@+id/bot_play"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@null"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:src="@mipmap/pause" />
+                <TextView
+                    android:id="@+id/bot_tvc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:text="00:00:00"
+                    android:textSize="20px"
+                    android:layout_toRightOf="@+id/bot_play"
+                    android:layout_toEndOf="@+id/bot_play"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:layout_centerVertical="true"
+                    android:text="/"
+                    android:textSize="20px"
+                    android:layout_marginLeft="2dp"
+                    android:layout_alignBaseline="@+id/bot_tvc"
+                    android:layout_toRightOf="@+id/bot_tvc"
+                    />
+
+                <TextView
+                    android:id="@+id/bot_tvd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:text="00:00:00"
+                    android:textSize="20px"
+                    android:textColor="#fff"
+                    android:layout_marginLeft="2dp"
+                    android:layout_alignBottom="@+id/tv2"
+                    android:layout_toRightOf="@+id/tv2"
+                    android:layout_toEndOf="@+id/tv2"/>
+            </RelativeLayout>
+
+
+
+
+            <ImageView
+                android:id="@+id/tv_sb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/volume"
+                android:layout_marginRight="240dp"
+                android:layout_toLeftOf="@+id/bot_mini"
+                android:layout_toStartOf="@+id/bot_mini"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="240dp" />
+
+            <RelativeLayout
+                android:id="@+id/seekbar_parent3"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="32dp"
+                android:layout_alignLeft="@+id/tv_sb1"
+                android:layout_alignStart="@+id/tv_sb1"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp">
+                <SeekBar
+                    android:id="@+id/seekBar3"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:maxHeight="3dip"
+                    android:minHeight="1dip"
+                    android:thumb="@mipmap/thumb"
+                    android:max="100"
+                    android:thumbOffset="0dip"
+                    android:progressDrawable="@drawable/volume_progress"/>
+            </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/bot_next"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@mipmap/next"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/bot_mini"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:src="@mipmap/mini"
+            android:layout_marginTop="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="25dp"
+            android:layout_marginEnd="25dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">WrPlayer</string>
+    <string name="scan_start">Scanning  </string>
+    <string name="scan_second">  s</string>
+    <string name="scan_end">End of scan, no video</string>
+    <string name="usb_insert">Refreshing</string>
+    <string name="usb_noVideo">No video</string>
+    <string name="app_exit">press again to exit program</string>
+</resources>
